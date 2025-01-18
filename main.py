@@ -68,7 +68,7 @@ def etl_process():
 
     log_file_msg('Transformation phase started')
     transformed_data = transform_data(combined_data)
-    log_file_msg('Extraction phase ecompleted')
+    log_file_msg('Transformation phase completed')
 
     log_file_msg('Loading phase started')
     load_data(transformed_data, transformed_file)
